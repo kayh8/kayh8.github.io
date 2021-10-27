@@ -7,6 +7,6 @@
     "encoding": {
         "x": { "field": "Square Footage", "type": "quantitative"},
         "y": { "field": "Total Floors", "type": "quantitative"},
-        "color": {"field": "Usage Description", "type": "nominal"}
+        "color": {"field": "Bldg Status", "type": "nominal"}
     }
 }
