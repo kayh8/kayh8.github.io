@@ -20,12 +20,15 @@
             "width": 600,
             "height": 600,
             "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-            "data": {"url": "building_inventory.csv"},
+            "data": {
+                "url": "building_inventory.csv", 
+                "format": {"type": "csv"}
+            },
             "mark": "circle",
             "encoding": {
                 "x": { "field": "Square Footage", "type": "quantitative"},
                 "y": { "field": "Total Floors", "type": "quantitative"},
-                "color": {"field": "Usage Description", "type": "nominal"}
+                "color": {"field": "Bldg Status", "type": "nominal"}
             }
         };
         vegaEmbed('#myviz', mySpec);
